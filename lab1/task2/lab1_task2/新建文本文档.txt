@@ -1,0 +1,19 @@
+	
+	cp @0,@2
+	cpc @1,@3
+	brlo case1
+	jmp case2
+
+case1:
+	movw @5:@4,@1:@0	; a%b = a
+	jmp endm
+
+case2:
+	sub @0,@2
+	sbc @1,@3
+	brsh case2
+
+	movw @5:@4,@1:@0	; mov a%b to a to @5:@4
+	jmp endm
+	
+endm:
