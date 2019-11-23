@@ -5,8 +5,9 @@
 ; Author : GHW
 ;
 
-
 ; The program gets input from keypad and displays its ascii value on LEDs and string value on LCD.
+
+; The program gets input from keypad and displays its ascii value on LEDs
 ; Port F is used for keypad, high 4 bits for column selection, low four bits for reading rows. On the board, RF7-4 connect to C3-0, RF3-0 connect to R3-0. L
 ; Port C is used to display the ASCII value of a key.
 
